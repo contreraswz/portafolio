@@ -1,1 +1,364 @@
 
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portafolio | Business Data Analyst & Systems Engineer</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Space+Grotesk:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#38bdf8",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101022",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-primary/20 bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80 sm:px-10">
+        <div class="flex items-center gap-3">
+            <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+                <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Edwin Contreras</h2>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex">
+            <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="#proyectos">Proyectos</a>
+            <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="#stack">Stack Técnico</a>
+            <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="#contacto">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-3">
+            <a href="https://github.com/contreraswz" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-gray-700 transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:text-gray-300 dark:hover:bg-primary/30">
+                <i class="fab fa-github text-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/edwin-contreras-12578ba5/" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-gray-700 transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:text-gray-300 dark:hover:bg-primary/30">
+                <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <main class="flex flex-1 justify-center py-5">
+        <div class="w-full max-w-6xl px-4">
+            
+            <!-- HERO / PROFILE SECTION (Estilo LinkedIn) -->
+            <section class="overflow-hidden rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark/60 shadow-lg">
+                <!-- Banner -->
+                <div class="h-48 w-full bg-cover bg-center sm:h-64 border-b border-primary/20" 
+                     style='background-image: linear-gradient(to bottom, rgba(16, 16, 34, 0.2), rgba(16, 16, 34, 0.8)), url("./assets/banner.png");'>
+                </div>
+
+                <!-- Info Perfil -->
+                <div class="relative px-6 pb-8 pt-0 sm:px-10">
+                    <div class="relative -mt-16 sm:-mt-20 mb-4 flex justify-between items-end">
+                        <div class="relative">
+                            <img src="./assets/EDW.jpg" 
+                                 alt="Edwin Contreras" 
+                                 class="h-28 w-28 rounded-full border-4 border-background-light dark:border-background-dark bg-background-dark object-cover sm:h-36 sm:w-36 shadow-xl ring-2 ring-primary/40" />
+                            <span class="absolute bottom-2 right-2 h-4 w-4 rounded-full bg-emerald-500 ring-2 ring-background-dark" title="Disponible para proyectos"></span>
+                        </div>
+                        
+                        <div class="hidden sm:flex gap-3 mb-2">
+                            <a href="https://www.linkedin.com/in/edwin-contreras-12578ba5/" target="_blank" class="flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-xs font-bold text-white transition-transform hover:scale-105">
+                                <i class="fab fa-linkedin mr-2"></i> Perfil LinkedIn
+                            </a>
+                            <a href="#contacto" class="flex h-10 items-center justify-center rounded-lg bg-primary/20 border border-primary/40 px-5 text-xs font-bold text-white transition-transform hover:bg-primary/30">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+                                    Edwin Contreras
+                                </h1>
+                                <p class="text-sm font-semibold text-primary mt-0.5">
+                                    Business Data Analyst & Systems Engineer
+                                </p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary border border-primary/20 w-fit">
+                                <i class="fas fa-location-dot text-[10px]"></i> México · Remoto / Presencial
+                            </span>
+                        </div>
+
+                        <h2 class="text-base font-semibold text-gray-800 dark:text-gray-200 pt-1 leading-snug max-w-3xl">
+                            Transformo Datos Complejos en Decisión y Valor Comercial
+                        </h2>
+
+                        <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
+                            Especialista en estructuración de modelos relacionales, análisis por cohortes y automatización de reportes mediante <strong class="text-gray-900 dark:text-white">SQL</strong>, <strong class="text-gray-900 dark:text-white">Power BI</strong> y <strong class="text-gray-900 dark:text-white">Python</strong>. Enfocado en resolver cuellos de botella operativos y optimizar métricas clave de negocio (LTV, Retención, Churn).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stack Tecnológico en Galería -->
+            <section id="stack" class="py-12">
+                <div class="px-2 mb-6 text-center sm:text-left">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Stack & Habilidades Técnicas</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Tecnologías de procesamiento, modelado y visualización de datos.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-database text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">SQL Avanzado</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">Joins, CTEs, Subconsultas</p>
+                    </div>
+
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-chart-bar text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">Power BI & DAX</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">Dashboards & Métricas</p>
+                    </div>
+
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">Modelado ER</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">Esquema Estrella / Copo</p>
+                    </div>
+
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fab fa-python text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">Python (EDA)</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">Pandas, SciPy, NumPy</p>
+                    </div>
+
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-users-line text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">Análisis por Cohortes</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">LTV, Churn, Retención</p>
+                    </div>
+
+                    <div class="group relative flex flex-col items-center justify-center rounded-xl border border-primary/20 bg-background-light p-4 text-center transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg dark:bg-background-dark/60">
+                        <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-file-excel text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white">Excel & VBA</h3>
+                        <p class="mt-1 text-[11px] text-gray-500 dark:text-gray-400">Macros & Automation</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Proyectos (Tarjetas 100% Cliqueables y Mayor Contraste) -->
+            <section id="proyectos" class="py-8">
+                <h2 class="px-2 pb-2 text-2xl font-bold text-gray-900 dark:text-white">Proyectos Destacados</h2>
+                <p class="px-2 pb-6 text-sm text-gray-500 dark:text-gray-400">Evidencia técnica estructurada bajo objetivos de negocio e impacto operativo real.</p>
+                
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+                    
+                    <!-- PROYECTO 1: Power BI & Cohortes (TripleTen) -->
+                    <div class="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-primary/20 bg-background-light p-5 transition-all hover:border-primary hover:shadow-xl dark:bg-background-dark/60">
+                        <div class="absolute -right-4 -bottom-6 select-none font-mono text-7xl font-extrabold text-primary/5 dark:text-primary/10 pointer-events-none">
+                            POWER BI
+                        </div>
+
+                        <div class="relative z-10">
+                            <div class="mb-4 aspect-video w-full rounded-lg bg-cover bg-center border border-primary/10 transition-transform group-hover:scale-[1.01]" style='background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80");'></div>
+                            
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">SQL</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">POWER BI</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">DAX</span>
+                            </div>
+
+                            <h3 class="mt-1 text-lg font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                <a href="https://github.com/contreraswz/dashboard-retencion-comercial" target="_blank" rel="noopener noreferrer" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    Dashboard de Retención Comercial y Cohortes
+                                </a>
+                            </h3>
+                            
+                            <!-- Texto con contraste alto y sin cansancio visual -->
+                            <div class="mt-4 space-y-2 text-xs text-gray-600 dark:text-gray-300">
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🎯 Desafío:</span> Falta de visibilidad en la fuga de clientes y rotación comercial por cohortes.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🛠️ Proceso:</span> Extracción en SQL, modelo relacional en Esquema Estrella y tablero dinámico en Power BI.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">📈 Resultado:</span> Medición automática de LTV, Churn Rate y tasas de retención por ciclo.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">💡 Lección:</span> El modelado relacional estructurado reduce en 80% la complejidad de fórmulas DAX.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 mt-6 flex items-center justify-between border-t border-primary/10 pt-4">
+                            <span class="text-[11px] font-mono text-gray-500 dark:text-gray-400">Modelo Relacional · Cohortes</span>
+                            <span class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Repo GitHub <i class="fab fa-github text-sm"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 2: Python & EDA (TripleTen) -->
+                    <div class="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-primary/20 bg-background-light p-5 transition-all hover:border-primary hover:shadow-xl dark:bg-background-dark/60">
+                        <div class="absolute -right-4 -bottom-6 select-none font-mono text-7xl font-extrabold text-primary/5 dark:text-primary/10 pointer-events-none">
+                            PYTHON
+                        </div>
+
+                        <div class="relative z-10">
+                            <div class="mb-4 aspect-video w-full rounded-lg bg-cover bg-center border border-primary/10 transition-transform group-hover:scale-[1.01]" style='background-image: url("https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80");'></div>
+                            
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">PYTHON</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">SCIPY</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">PANDAS</span>
+                            </div>
+
+                            <h3 class="mt-1 text-lg font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                <a href="https://github.com/contreraswz/analisis-estadistico-python" target="_blank" rel="noopener noreferrer" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    Análisis Exploratorio y Conversión (EDA)
+                                </a>
+                            </h3>
+                            
+                            <div class="mt-4 space-y-2 text-xs text-gray-600 dark:text-gray-300">
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🎯 Desafío:</span> Detección de sesgos y patrones de comportamiento en hábitos de usuarios previo a campaña.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🛠️ Proceso:</span> Scripting en Python (Pandas/SciPy) en Jupyter Notebook, limpieza de outliers y pruebas A/B.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">📈 Resultado:</span> Identificación de hipótesis clave y validación de significancia estadística.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">💡 Lección:</span> La comprobación rigorosa de distribuciones previene sesgos en la toma de decisiones.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 mt-6 flex items-center justify-between border-t border-primary/10 pt-4">
+                            <span class="text-[11px] font-mono text-gray-500 dark:text-gray-400">Pruebas A/B · Estadística</span>
+                            <span class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Repo GitHub <i class="fab fa-github text-sm"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 3: Conciliación de Inventarios (Global Gas - Experiencia Real) -->
+                    <div class="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-primary/20 bg-background-light p-5 transition-all hover:border-primary hover:shadow-xl dark:bg-background-dark/60">
+                        <div class="absolute -right-4 -bottom-6 select-none font-mono text-7xl font-extrabold text-primary/5 dark:text-primary/10 pointer-events-none">
+                            GLOBAL GAS
+                        </div>
+
+                        <div class="relative z-10">
+                            <div class="mb-4 aspect-video w-full rounded-lg bg-cover bg-center border border-primary/10 transition-transform group-hover:scale-[1.01]" style='background-image: url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80");'></div>
+                            
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="rounded bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-500 border border-emerald-500/20">INDUSTRIA REAL</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">SQL</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">VBA</span>
+                            </div>
+
+                            <h3 class="mt-1 text-lg font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                <a href="https://github.com/contreraswz/conciliacion-inventarios-globalgas" target="_blank" rel="noopener noreferrer" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    Conciliación Analítica de Inventarios (Global Gas)
+                                </a>
+                            </h3>
+                            
+                            <div class="mt-4 space-y-2 text-xs text-gray-600 dark:text-gray-300">
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🎯 Desafío:</span> Discrepancias operativas en la conciliación de cargas (+50k registros semanales).</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🛠️ Proceso:</span> Automatización con macros VBA y scripts SQL para cruces analíticos y auditoría de mermas.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">📈 Resultado:</span> Disminución drástica en tiempos de cuadre e incremento en la precisión del control.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">💡 Lección:</span> La estandarización en la captura elimina discrepancias operativas en origen.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 mt-6 flex items-center justify-between border-t border-primary/10 pt-4">
+                            <span class="text-[11px] font-mono text-gray-500 dark:text-gray-400">Automatización · Operaciones</span>
+                            <span class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Repo GitHub <i class="fab fa-github text-sm"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 4: Modelado SQL & Data Cleaning (TripleTen) -->
+                    <div class="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-primary/20 bg-background-light p-5 transition-all hover:border-primary hover:shadow-xl dark:bg-background-dark/60">
+                        <div class="absolute -right-4 -bottom-6 select-none font-mono text-7xl font-extrabold text-primary/5 dark:text-primary/10 pointer-events-none">
+                            SQL ADVANCED
+                        </div>
+
+                        <div class="relative z-10">
+                            <div class="mb-4 aspect-video w-full rounded-lg bg-cover bg-center border border-primary/10 transition-transform group-hover:scale-[1.01]" style='background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80");'></div>
+                            
+                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">POSTGRESQL</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">CTEs</span>
+                                <span class="rounded bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">WINDOW FUNCTIONS</span>
+                            </div>
+
+                            <h3 class="mt-1 text-lg font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                <a href="https://github.com/contreraswz/modelado-consultas-sql" target="_blank" rel="noopener noreferrer" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    Modelado Relacional y Consultas Complejas SQL
+                                </a>
+                            </h3>
+                            
+                            <div class="mt-4 space-y-2 text-xs text-gray-600 dark:text-gray-300">
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🎯 Desafío:</span> Transformación de bases de datos no estructuradas para análisis de Funnels de Venta.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">🛠️ Proceso:</span> Diseño de esquema relacional, agregaciones avanzadas con Window Functions y subconsultas.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">📈 Resultado:</span> Optimización en la velocidad de consulta e identificación de caídas en el embudo.</p>
+                                <p><span class="font-semibold text-gray-900 dark:text-gray-100">💡 Lección:</span> Utilizar Common Table Expressions (CTEs) mejora drásticamente la legibilidad y mantenimiento.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 mt-6 flex items-center justify-between border-t border-primary/10 pt-4">
+                            <span class="text-[11px] font-mono text-gray-500 dark:text-gray-400">ETL · Funnel Analysis</span>
+                            <span class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Repo GitHub <i class="fab fa-github text-sm"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="border-t border-primary/20 bg-background-light dark:bg-background-dark">
+        <div class="mx-auto max-w-6xl px-5 py-10 text-center">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Disponible para roles de Analista de Datos de Negocio y Business Intelligence</h3>
+            
+            <div class="flex justify-center gap-4 pb-8">
+                <a href="https://www.linkedin.com/in/edwin-contreras-12578ba5/" target="_blank" class="flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white transition-transform hover:scale-105">
+                    Contactar en LinkedIn
+                </a>
+                <a href="https://github.com/contreraswz" target="_blank" class="flex h-11 items-center justify-center rounded-lg bg-primary/20 border border-primary/30 px-6 text-sm font-bold text-white transition-transform hover:bg-primary/30">
+                    GitHub Profile
+                </a>
+            </div>
+            <p class="text-xs text-gray-500 dark:text-gray-400">© 2026 Portafolio Profesional de Datos. Edwin Contreras.</p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
